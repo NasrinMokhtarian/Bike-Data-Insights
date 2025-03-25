@@ -27,35 +27,21 @@ This project focuses on building a batch data pipeline for analyzing bike rental
  * ├── README.md            # Project documentation
 
 📊 Dataset
-
-   Source: Santander Bicycle Rentals - London
-   
-   Format: CSV
-   
-   Fields: Rental Start Time, End Time, Station, Bike ID, User Type, etc.
-   
-   Frequency: Daily updates (batch processing)
+   * Source: Santander Bicycle Rentals - London
+   * Format: CSV
+   * Fields: Rental Start Time, End Time, Station, Bike ID, User Type, etc.
+   * Frequency: Daily updates (batch processing)
 
 ⚙️ Technologies Used
-
-   Kestra (orchestration & scheduling)
-   
-   PostgreSQL / Google Cloud Storage (storage layer)
-   
-   Spark / dbt (batch transformations)
-   
-   BigQuery (data warehousing)
-   
-   Looker Studio (visualization & reporting)
+   * Kestra (orchestration & scheduling)
+   * PostgreSQL / Google Cloud Storage (storage layer)
+   * Spark / dbt (batch transformations)
+   * BigQuery (data warehousing)
+   * Looker Studio (visualization & reporting)
 
 🔄 Batch Processing Pipeline
-
-   Extract Data: Kestra downloads the dataset from source.
-   
-   Store Raw Data: Data is stored in PostgreSQL or GCS.
-   
-   Transform Data: Spark/dbt processes the data (cleaning, aggregations).
-   
-   Load into BigQuery: Processed data is stored for querying.
-   
-   Analyze & Visualize: SQL queries + Looker dashboards for insights.
+   * Extract Data: Kestra downloads the dataset from source.
+   * Store Raw Data: Data is stored in PostgreSQL or GCS.
+   * Transform Data: Spark/dbt processes the data (cleaning, aggregations).
+   * Load into BigQuery: Processed data is stored for querying.
+   * Analyze & Visualize: SQL queries + Looker dashboards for insights.
