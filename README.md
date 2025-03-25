@@ -17,3 +17,11 @@ This project focuses on building a batch data pipeline for analyzing bike rental
   * Load processed data into BigQuery for analysis.
 
   *  Create SQL queries and dashboards to generate insights.
+
+🏗️ Architecture
+    graph TD;
+        A[Kestra] -->|Extract| B[Raw Data Storage];
+        B -->|Load| C[PostgreSQL / GCS];
+        C -->|Transform| D[Spark/dbt];
+        D -->|Load| E[BigQuery];
+        E -->|Analyze| F[Dashboards/SQL Queries];
