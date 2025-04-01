@@ -9,7 +9,7 @@
 This project focuses on building a batch data pipeline for analyzing a flight booking dataset. The goal is to extract, transform, and load (ETL) the dataset using dlt, DuckDB, pandas, and BigQuery for further analysis in Looker Studio. The project follows best practices learned in the DataTalksClub Data Engineering Zoomcamp 2025.
 
 🔍 Objectives
-  Automate batch data ingestion using dlt.
+  <be> Automate batch data ingestion using dlt.
   Store raw data in DuckDB.
   Perform data transformations using pandas.
   Load processed data into BigQuery for analysis.
