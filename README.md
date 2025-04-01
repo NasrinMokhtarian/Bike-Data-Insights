@@ -24,7 +24,7 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
  * ├── README.md            # Project documentation
 
 📊 Dataset
-  * Source: Flight Price Prediction dataset from Kaggle[here](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction)
+  * Source: Flight Price Prediction dataset from: [here](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction)
   * Format: CSV
   * Fields: Airline, Date, Time, Price, Class (Economy/Business), Stops, etc.
   * Frequency: Static dataset (one-time load)
@@ -39,7 +39,7 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
   * Does price vary with Airlines?
   * How is the price affected when tickets are bought just 1 or 2 days before departure?
   * Does ticket price change based on departure and arrival times?
-  * How does price change with different Source and Destination cities?
+  * How does the price change with different Source and Destination cities?
   * How does ticket price vary between Economy and Business class?
 
 ⚙️ Technologies Used
