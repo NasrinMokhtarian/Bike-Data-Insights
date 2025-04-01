@@ -16,7 +16,7 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
 *  Create SQL queries and dashboards to generate insights.
 
 📂 Repository Structure
-  ├── data/                # Sample dataset (if applicable)
+ <> ├── data/                # Sample dataset (if applicable)
   ├── ingestion/           # dlt ingestion scripts
   ├── transformations/     # Data cleaning and transformation scripts
   ├── sql_queries/         # SQL queries for analysis
