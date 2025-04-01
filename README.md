@@ -16,10 +16,9 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
 *  Create SQL queries and dashboards to generate insights.
 
 📂 Repository Structure
- * ├── data/                # Sample dataset (if applicable)
- * ├── ingestion/           # dlt ingestion scripts
- * ├── transformations/     # Data cleaning and transformation scripts
- * ├── sql_queries/         # SQL queries for analysis
+ * ├── ingestion/           # dlt ingestion scripts to extract, transform, and load in a data lake(duckdb)
+ * ├── transformations/     # Data cleaning and preparation scripts for analyzing
+ * ├── data warehouse/         # dlt scripts to load cleaned data from the data lake to a data warehouse(BigQuery)
  * ├── dashboards/          # Dashboards & reports
  * ├── README.md            # Project documentation
 
@@ -52,6 +51,6 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
 🔄 Batch Processing Pipeline
   * Extract Data: dlt downloads the dataset from Kaggle.
   * Store Raw Data: Data is stored in DuckDB.
-  * Transform Data: pandas cleans and processes the data (e.g., date formatting, price conversions, stop count normalization).
+  * Transform Data: pandas cleans and processes the data (e.g., date formatting, price conversions, stop count normalization, etc).
   * Load into BigQuery: Processed data is stored for querying.
   * Analyze & Visualize: SQL queries + Looker Studio dashboards for insights.
