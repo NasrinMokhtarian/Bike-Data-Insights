@@ -1,47 +1,69 @@
-# Bike-Data-Insights
-## Batch Processing Project
+#Flight Price Prediction
 
+##Batch Processing Project
+
+Data Ingestion with dlt
 
 📌 Project Overview
 
-This project focuses on building a batch data pipeline for analyzing bike rental data in London. The goal is to extract, transform, and load (ETL) the dataset using Kestra, PostgreSQL, Google Cloud Storage (GCS), and BigQuery. The project follows best practices learned in the DataTalksClub Data Engineering Zoomcamp 2025.
+This project focuses on building a batch data pipeline for analyzing a flight booking dataset. The goal is to extract, transform, and load (ETL) the dataset using dlt, DuckDB, pandas, and BigQuery for further analysis in Looker Studio. The project follows best practices learned in the DataTalksClub Data Engineering Zoomcamp 2025.
 
 🔍 Objectives
 
-  * Automate batch data ingestion using Kestra.
+Automate batch data ingestion using dlt.
 
-  * Store raw data in PostgreSQL or Google Cloud Storage (GCS).
+Store raw data in DuckDB.
 
-  * Perform data transformations using Spark/dbt.
+Perform data transformations using pandas.
 
-  * Load processed data into BigQuery for analysis.
+Load processed data into BigQuery for analysis.
 
-  *  Create SQL queries and dashboards to generate insights.
+Create SQL queries and dashboards to generate insights.
 
 📂 Repository Structure
- * ├── data/                # Sample dataset (if applicable)
- * ├── kestra_flows/        # Kestra workflow YAML files
- * ├── sql_queries/         # SQL queries for analysis
- * ├── notebooks/           # Jupyter Notebooks for EDA & analysis
- * ├── dashboards/          # Dashboards & reports
- * ├── README.md            # Project documentation
+
+├── data/                # Sample dataset (if applicable)
+
+├── ingestion/           # dlt ingestion scripts
+
+├── transformations/     # Data cleaning and transformation scripts
+
+├── sql_queries/         # SQL queries for analysis
+
+├── dashboards/          # Dashboards & reports
+
+├── README.md            # Project documentation
 
 📊 Dataset
-   * Source: Santander Bicycle Rentals - London: [datasets](https://cycling.data.tfl.gov.uk/)
-   * Format: CSV
-   * Fields: Rental Start Time, End Time, Station, Bike ID, User Type, etc.
-   * Frequency: Daily updates (batch processing)
+
+Source: Flight Price Prediction dataset from Kaggle
+
+Format: CSV
+
+Fields: Airline, Date, Time, Price, Class (Economy/Business), Stops, etc.
+
+Frequency: Static dataset (one-time load)
 
 ⚙️ Technologies Used
-   * Kestra (orchestration & scheduling)
-   * PostgreSQL / Google Cloud Storage (storage layer)
-   * Spark / dbt (batch transformations)
-   * BigQuery (data warehousing)
-   * Looker Studio (visualization & reporting)
+
+dlt (data ingestion from Kaggle to DuckDB)
+
+DuckDB (temporary storage & processing)
+
+pandas (data transformation & cleaning)
+
+BigQuery (data warehousing & querying)
+
+Looker Studio (visualization & reporting)
 
 🔄 Batch Processing Pipeline
-   * Extract Data: Kestra downloads the dataset from source.
-   * Store Raw Data: Data is stored in PostgreSQL or GCS.
-   * Transform Data: Spark/dbt processes the data (cleaning, aggregations).
-   * Load into BigQuery: Processed data is stored for querying.
-   * Analyze & Visualize: SQL queries + Looker dashboards for insights.
+
+Extract Data: dlt downloads the dataset from Kaggle.
+
+Store Raw Data: Data is stored in DuckDB.
+
+Transform Data: pandas cleans and processes the data (e.g., date formatting, price conversions, stop count normalization).
+
+Load into BigQuery: Processed data is stored for querying.
+
+Analyze & Visualize: SQL queries + Looker Studio dashboards for insights.
