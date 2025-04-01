@@ -16,9 +16,11 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
 *  Create SQL queries and dashboards to generate insights.
 
 📂 Repository Structure
- * ├── code/           # dlt ingestion scripts to extract, transform, and load in a data lake(duckdb)
-                      Data cleaning and preparation scripts for analyzing
- * ├── data/         # dlt scripts to load cleaned data from the data lake to a data warehouse(BigQuery)
+ * ├── code/
+        * dlt ingestion scripts to extract, transform, and load in a data lake(duckdb)
+        * pandas Data cleaning and preparation scripts for analyzing
+        * dlt scripts to load cleaned data from the data lake to a data warehouse(BigQuery)
+ * ├── data/         # sample of datasets
  * ├── dashboards/          # Dashboards & reports
  * ├── README.md            # Project documentation
 
