@@ -16,42 +16,42 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
 *  Create SQL queries and dashboards to generate insights.
 
 📂 Repository Structure
- <> ├── data/                # Sample dataset (if applicable)
-  ├── ingestion/           # dlt ingestion scripts
-  ├── transformations/     # Data cleaning and transformation scripts
-  ├── sql_queries/         # SQL queries for analysis
-  ├── dashboards/          # Dashboards & reports
-  ├── README.md            # Project documentation
+ * ├── data/                # Sample dataset (if applicable)
+ * ├── ingestion/           # dlt ingestion scripts
+ * ├── transformations/     # Data cleaning and transformation scripts
+ * ├── sql_queries/         # SQL queries for analysis
+ * ├── dashboards/          # Dashboards & reports
+ * ├── README.md            # Project documentation
 
 📊 Dataset
-  Source: Flight Price Prediction dataset from Kaggle[here](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction)
-  Format: CSV
-  Fields: Airline, Date, Time, Price, Class (Economy/Business), Stops, etc.
-  Frequency: Static dataset (one-time load)
+  * Source: Flight Price Prediction dataset from Kaggle[here](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction)
+  * Format: CSV
+  * Fields: Airline, Date, Time, Price, Class (Economy/Business), Stops, etc.
+  * Frequency: Static dataset (one-time load)
 📊 Dataset Details
-  Source: Ease My Trip website
-  Data Collection: Web scraping using Octoparse
-  Time Period: Data collected over 50 days (Feb 11 - Mar 31, 2022)
-  Total Records: 300,261 flight booking options
-  Categories: Economy and Business class tickets
+ * Source: Ease My Trip website
+ * Data Collection: Web scraping using Octoparse
+ * Time Period: Data collected over 50 days (Feb 11 - Mar 31, 2022)
+ * Total Records: 300,261 flight booking options
+ * Categories: Economy and Business class tickets
 
 🔬 Research Questions
-  Does price vary with Airlines?
-  How is the price affected when tickets are bought just 1 or 2 days before departure?
-  Does ticket price change based on departure and arrival times?
-  How does price change with different Source and Destination cities?
-  How does ticket price vary between Economy and Business class?
+  * Does price vary with Airlines?
+  * How is the price affected when tickets are bought just 1 or 2 days before departure?
+  * Does ticket price change based on departure and arrival times?
+  * How does price change with different Source and Destination cities?
+  * How does ticket price vary between Economy and Business class?
 
 ⚙️ Technologies Used
-  dlt (data ingestion from Kaggle to DuckDB)
-  DuckDB (temporary storage & processing)
-  pandas (data transformation & cleaning)
-  BigQuery (data warehousing & querying)
-  Looker Studio (visualization & reporting)
+  * dlt (data ingestion from Kaggle to DuckDB)
+  * DuckDB (temporary storage & processing)
+  * pandas (data transformation & cleaning)
+  * BigQuery (data warehousing & querying)
+  * Looker Studio (visualization & reporting)
 
 🔄 Batch Processing Pipeline
-  Extract Data: dlt downloads the dataset from Kaggle.
-  Store Raw Data: Data is stored in DuckDB.
-  Transform Data: pandas cleans and processes the data (e.g., date formatting, price conversions, stop count normalization).
-  Load into BigQuery: Processed data is stored for querying.
-  Analyze & Visualize: SQL queries + Looker Studio dashboards for insights.
+  * Extract Data: dlt downloads the dataset from Kaggle.
+  * Store Raw Data: Data is stored in DuckDB.
+  * Transform Data: pandas cleans and processes the data (e.g., date formatting, price conversions, stop count normalization).
+  * Load into BigQuery: Processed data is stored for querying.
+  * Analyze & Visualize: SQL queries + Looker Studio dashboards for insights.
