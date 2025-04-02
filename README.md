@@ -56,3 +56,7 @@ This project focuses on building a batch data pipeline for analyzing a flight bo
   * Transform Data: pandas cleans and processes the data (e.g., date formatting, price conversions, stop count normalization, etc).
   * Load into BigQuery: Processed data is stored for querying.
   * Analyze & Visualize: SQL queries + Looker Studio dashboards for insights.
+
+📊 Data Warehouse Optimization
+  * Partitioning: Based on flight date to improve query performance.
+  * Clustering: By Airline & Class to optimize analytics.
